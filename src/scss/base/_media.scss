@@ -1,0 +1,13 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* стили только для IE10 */
+  .ie{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 328px;
+    background-color: rgba(246, 243, 243, 0.5);
+
+  }
+}

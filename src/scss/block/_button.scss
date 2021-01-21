@@ -1,0 +1,107 @@
+.btn {
+
+  width: 118px;
+  height: 48px;
+  text-align: center;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  position: relative;
+
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-white;
+  background: $color-brow-1;
+
+  &:hover {
+
+    background: $color-brow-2;
+
+  }
+
+  &:disabled {
+
+    background: $color-brow-3;
+    cursor: auto;
+
+  }
+
+  &_available {
+
+    .btn__span_2 {
+
+      display: none;
+
+    }
+
+    .btn__span_1 {
+
+      display: block;
+
+    }
+
+  }
+
+  &_postponed {
+
+    background: $color-brow-4;
+    cursor: auto;
+
+    .btn__span_1 {
+
+      display: none;
+
+    }
+
+    .btn__span_2 {
+
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    &_bought {
+
+      display: none;
+
+    }
+
+  }
+  .loader {
+
+    display: none;
+
+  }
+
+  &_loader {
+
+    .btn__span_1, .btn__span_2 {
+
+      display: none;
+
+    }
+
+    .loader {
+
+      display: block;
+      margin: 0 auto;
+
+    }
+
+  }
+
+  &__span_2 span {
+
+    display: block;
+    width: 13.3px;
+    height: 9.2px;
+    margin-right: 7.5px;
+    background-image: url(../img/svg/icon_done.svg);
+    @include backgroundImportants;
+
+  }
+
+}

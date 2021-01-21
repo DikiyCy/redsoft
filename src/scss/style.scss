@@ -1,0 +1,96 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+
+    }
+
+}
+
+@import 'normalize.min';
+@import 'fonts';
+@import './base/variable';
+@import './base/mixin';
+@import './base/media';
+@import './block/button';
+@import './block/footer';
+@import './block/header';
+@import './block/item';
+@import './block/main';
+@import './block/nav';
+@import './block/search';
+@import './block/loader';
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: $bacground-main;
+    font-family: 'Merriweather', 'Roboto', sans-serif;
+    color: $color-text;
+
+}
+
+.container {
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1246px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+h1, h2, h3, h6, p, ul, li {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+h1 {
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+
+}
+
+h2 {
+
+  font-size: 18px;
+  line-height: 150%;
+
+}
+
+h3 {
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+}
+
+h6 {
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+
+}
+
+
+a, a:visited, a:active, a:hover {
+
+  font-family: 'Merriweather', 'Roboto', sans-serif;
+  text-decoration: none;
+
+}

@@ -1,0 +1,94 @@
+.item {
+
+  max-width: 280px;
+  margin-bottom: 40px;
+  position: relative;
+
+  .ei {
+
+    display: none;
+
+  }
+
+  &__img {
+
+    width: 280px;
+    height: 160px;
+
+  }
+
+  &__wrap {
+
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &-1 {
+
+      min-height: 168px;
+      border: 1px solid $color-border;
+      padding: 19px 23px 24px;
+
+    }
+
+    &-2 {
+
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+  }
+
+  &__descr {
+
+    margin-bottom: 22px;
+    letter-spacing: -0.3px;
+    max-width: 220px;
+
+  }
+
+  .price {
+
+    &__old {
+
+      text-decoration: line-through;
+      color: $color-grey-2;
+
+    }
+
+    &__sold {
+
+      display: none;
+      margin-top: 12px;
+
+    }
+
+  }
+
+  &_sold {
+
+    filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+    filter: opacity(50%);
+    // -ms-filter: opacity(50%);
+    // -ms-filter: "progid: DXImageTransform.Microsoft.opacity(50%)";
+    // filter: "rogid: DXImageTransform.Microsoft.opacity(50%)";
+
+    .price__sold {
+
+      display: block;
+
+    }
+
+    .btn, .price__old, .price__new {
+
+      display: none;
+
+    }
+
+  }
+
+}

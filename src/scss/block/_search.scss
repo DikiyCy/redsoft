@@ -1,0 +1,42 @@
+.search {
+
+  &-header {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+  &__inp {
+
+    height: 48px;
+    width: 294px;
+    padding-top: 13px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    border: 1px solid $color-border;
+    border-right: none;
+    background-color: $bacground-main;
+    vertical-align: text-top;
+    font-size: 14px;
+    line-height: 150%;
+
+    &::placeholder {
+
+      color: $color-grey-1;
+
+    }
+
+    &:focus {
+
+      border: 1px solid $color-border-dark;
+      border-right: none;
+      outline: transparent;
+
+    }
+
+  }
+
+}

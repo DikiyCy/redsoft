@@ -1,0 +1,25 @@
+.nav {
+
+  margin-right: auto;
+
+  &__link {
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-text;
+
+    &:not(:nth-last-child(1)) {
+
+      margin-right: 45px;
+
+    }
+
+  }
+
+  &-footer .nav__link {
+
+    color: $color-grey-3;
+
+  }
+}

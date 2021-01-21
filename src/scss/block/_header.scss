@@ -1,0 +1,27 @@
+.header {
+
+  border-bottom: 1px solid $color-border;
+
+  .container {
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  &__logo {
+
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/svg/logo_light.svg);
+    @include backgroundImportants;
+    margin-right: 48px;
+    cursor: pointer;
+
+  }
+
+}

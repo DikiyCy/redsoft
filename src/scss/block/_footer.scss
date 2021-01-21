@@ -1,0 +1,82 @@
+.footer {
+
+  background-color: $bacground-footer;
+
+  .container {
+
+    padding-top: 22px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  &__logo {
+
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/svg/logo_dark.svg);
+    @include backgroundImportants;
+    margin-right: 48px;
+    cursor: pointer;
+
+  }
+
+  a {
+
+    color: $color-grey-3;
+    font-size: 14px;
+    line-height: 150%;
+
+  }
+
+  .location, .phone {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  .location {
+
+    &__icon {
+
+      width: 10.4px;
+      height: 14px;
+      background-image: url(../img/svg/icon_location.svg);
+      @include backgroundImportants;
+      margin-left: 51px;
+
+      }
+
+      &__link {
+
+        margin-left: 10.8px;
+
+      }
+
+  }
+
+  .phone {
+
+    &__icon {
+
+      width: 14px;
+      height: 14px;
+      background-image: url(../img/svg/icon_phone.svg);
+      @include backgroundImportants;
+
+    }
+
+    &__link {
+
+      margin-left: 8px;
+
+    }
+  }
+
+}
