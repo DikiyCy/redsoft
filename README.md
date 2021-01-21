@@ -1,6 +1,6 @@
 1. для просмотра:
 
-    https://github.com/DikiyCy/redsoft.git
+    https://dikiycy.github.io/redsoft/dist/
 
 1. для запуска проекта
     ```sh
